@@ -1,29 +1,46 @@
-// hallo hallo
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
+    <style>
+         input[type=submit] {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+
+
     <meta charset="UTF-8">
-    <title>Journal login</title>
+    <title>Login DeluxeEHR login</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-<h1> Journal Login </h1>
+<div class="banner">
 
-<img src="heartbeat.jpg" height="100px">
+    <div class="login_div">
 
+        <h1> Velkommen</h1>
+        <div class ="logo">
+        <img src="logo.jpg" alt="" height="100px">
+        </div>
+            <div class="form">
+                <form action="/action_page.php">
+                   <label for="username"> Brugernavn:</label><br>
+                   <input type="text" id="username" name="username" ><br>
+                   <label for="pwd"> Kodeord:</label><br>
+                   <input type="text" id="pwd" name="pwd" ><br><br>
+                    <input type="submit" value="Login" >
 
-<form action="/action_page.php">
-    <label for="username"> Username:</label><br>
-    <input type="text" id="username" name="username" ><br>
-    <label for="pwd"> Password:</label><br>
-    <input type="text" id="pwd" name="pwd" ><br><br>
-    <input type="submit" value="Login">
-</form>
-
-
-
-<img src="seqencediagram.png" height="200px">
+                 </form>
+            </div>
+    </div>
+</div>
 
 </body>
 </html></html>

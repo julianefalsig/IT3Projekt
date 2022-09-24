@@ -17,12 +17,19 @@ body {
     background-size: cover;
     background-position: center;
 }
-.login_div{
+
+.menu{
+    width: 90%;
     margin: auto;
-//background-color: azure;
-    width: 175px;
-    padding: 100px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
 }
-.Login_butt{
+.menu ul li {
+    list-style: none;
+    display: flow;
+    margin: 0 20px;
+
 
 }
