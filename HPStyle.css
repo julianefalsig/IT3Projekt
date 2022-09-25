@@ -18,18 +18,50 @@ body {
     background-position: center;
 }
 
-.menu{
-    width: 90%;
+.Container{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 3fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas:
+            "nav nav"
+    "sidebar main"
+    "footer footer"
+}
+
+nav{
+    grid-area:nav;
+    width: 100%;
     margin: auto;
-    padding: 35px 0;
+    padding: 5px 0;
     display: flex;
     align-items: center;
-    //justify-content: space-between;
+    justify-content: space-between;
 }
-.menu ul li {
+
+nav ul li{
     list-style: none;
-    display: flow;
-    margin: 0 20px;
+    display: inline-block;
+    margin: 0 90px;
+}
+
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
 
 
 }
+main{
+    grid-area: main;
+}
+.sidebar{
+    background-color: cornflowerblue;
+    grid-area: sidebar;
+}
+footer{
+    grid-area: footer;
+    margin: auto;
+}
+
+
+
