@@ -23,10 +23,11 @@ body {
     height: 100vh;
     grid-template-columns: 0.8fr 3fr;
     grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-gap: 0.1rem;
     grid-template-areas:
             "nav nav"
-    "sidebar main"
-    "footer footer"
+            "sidebar main"
+            "footer footer"
 }
 
 nav{
@@ -37,6 +38,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    border-style: outset;
+    border-color: dodgerblue;
 }
 
 nav ul li{
@@ -48,19 +52,25 @@ nav ul li{
 nav ul li a{
     color: white;
     text-transform: uppercase;
-
-
+    font-family: "Baloo Thambi 2";
 }
+
 main{
-    grid-area: main;
+    grid-area: main
 }
+
+
 .sidebar{
-    background-color: cornflowerblue;
+
+
     grid-area: sidebar;
 }
 footer{
     grid-area: footer;
-    margin: auto;
+    border-style: solid none none none;
+    border-color: darkblue;
+
+
 }
 
 
