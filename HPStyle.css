@@ -55,7 +55,7 @@ nav ul li a{
     font-family: "Baloo Thambi 2";
 }
 
-main{
+.main{
     grid-area: main
 }
 

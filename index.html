@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Login DeluxeEHR login</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <script>
+        const knapHandler = funktion(){
+            let evasInput = dokument.getElementById("evasDiv");
+            evasInput.innerText = "ny tekst"
+        }
+
+    </script>
+
 
     <style>
         input[type=submit] {
@@ -16,6 +24,7 @@
             cursor: pointer;
         }
     </style>
+    <script src="Main.js"></script>
 
 </head>
 <body>
@@ -26,14 +35,16 @@
         <img src="logo.jpg" alt="" height="100px">
         </div>
             <div class="form">
-                <form action="/action_page.php">
+                <form action="HomePage.html">
                    <label for="username"> Brugernavn:</label><br>
                    <input type="text" id="username" name="username" ><br>
                    <label for="pwd"> Kodeord:</label><br>
                    <input type="text" id="pwd" name="pwd" ><br><br>
-                    <input type="submit" value="Login" >
+                    <input id="evasInput" type="submit" value="Login" >
                  </form>
             </div>
+
+
     </div>
 </div>
 
